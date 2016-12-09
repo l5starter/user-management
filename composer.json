@@ -1,0 +1,23 @@
+{
+    "name": "l5starter/user-management",
+    "description": "Laravel 5 Start, Package users",
+    "keywords": ["laravel", "starter", "user-management"],
+    "type": "laravel-package",
+    "license": "MIT",
+    "homepage": "http://www.srisattha.com",
+    "authors": [
+        {
+            "name": "Wiwat Srisattha",
+            "email": "wiwat_srt@hotmail.com"
+        }
+    ],
+    "require": {
+        "l5starter/core": "5.3.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "L5Starter\\UserManagement\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
