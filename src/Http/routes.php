@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['namespace' => 'L5Starter\UserManagement\Http\Controllers\Admin', 'middleware' => ['web', 'auth']], function () {
+Route::group(['namespace' => 'L5Starter\UserManagement\Http\Controllers\Admin', 'middleware' => ['web', 'role:admin']], function () {
     Route::get('admin/users', ['as' => 'admin.users.index', 'uses' => 'UserController@index']);
     Route::post('admin/users', ['as' => 'admin.users.store', 'uses' => 'UserController@store']);
     Route::get('admin/users/create', ['as' => 'admin.users.create', 'uses' => 'UserController@create']);
