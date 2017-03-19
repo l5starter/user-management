@@ -21,12 +21,6 @@ Publish Configuration
 php artisan vendor:publish --provider="L5Starter\UserManagement\UserManagementServiceProvider"
 ```
 
-Running Migrations
-
-``` bash
-$ php artisan migrate
-```
-
 Running Seeders
 
 ``` bash
