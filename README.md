@@ -32,7 +32,7 @@ Running Seeders
 ``` bash
 $ php artisan db:seed --class=UsersTableSeeder
 $ php artisan db:seed --class=UserHasRolesTableSeeder
-``
+```
 
 Add menu in `resources/views/vendor/l5starter/admin/partials/sidebar.blade.php`
 
