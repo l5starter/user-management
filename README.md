@@ -1,4 +1,4 @@
-# L5Start\UserManagement
+# L5Starter\UserManagement
 
 ## Installation
 
@@ -14,6 +14,25 @@ Then in your `config/app.php` add in `providers`
 ``` php
 L5Starter\UserManagement\UserManagementServiceProvider::class,
 ```
+
+Publish Configuration
+
+``` php
+php artisan vendor:publish --provider="L5Starter\UserManagement\UserManagementServiceProvider"
+```
+
+Running Migrations
+
+``` bash
+$ php artisan migrate
+```
+
+Running Seeders
+
+``` bash
+$ php artisan db:seed --class=UsersTableSeeder
+$ php artisan db:seed --class=UserHasRolesTableSeeder
+``
 
 Add menu in `resources/views/vendor/l5starter/admin/partials/sidebar.blade.php`
 
