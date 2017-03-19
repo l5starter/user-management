@@ -18,6 +18,8 @@ class UserManagementServiceProvider extends ServiceProvider
         }
 
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'l5starter');
+        // Publishing File
+        $this->publishes([__DIR__.'/../database/seeds/' => database_path('seeds')], 'seeder');
     }
 
     /**
