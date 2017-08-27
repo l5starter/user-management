@@ -1,8 +1,10 @@
 <table class="table table-hover">
     <thead>
-        <th>Name</th>
-        <th>Email</th>
-        <th colspan="3">{{ trans('l5starter::general.action') }}</th>
+		<tr>
+			<th>Name</th>
+			<th>Email</th>
+			<th colspan="3">{{ trans('l5starter::general.action') }}</th>
+		</tr>
     </thead>
     <tbody>
     @foreach($users as $user)
